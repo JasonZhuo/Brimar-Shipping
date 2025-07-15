@@ -1,0 +1,23 @@
+{
+    "sales_order": {
+        "column": {
+            "brimar_residential": true,
+            "brimar_scheduled": true,
+            "brimar_shipping_fee": true
+        }
+    },
+    "quote": {
+        "column": {
+            "brimar_residential": true,
+            "brimar_scheduled": true,
+            "brimar_shipping_fee": true
+        }
+    },
+    "quote_address": {
+        "column": {
+            "brimar_residential": true,
+            "brimar_scheduled": true,
+            "brimar_shipping_fee": true
+        }
+    }
+}

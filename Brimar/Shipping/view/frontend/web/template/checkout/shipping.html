@@ -1,0 +1,15 @@
+<div id="checkout-shipping-method-load">
+    <!-- ko foreach: getRegion('before-shipping-method-form') -->
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <!-- /ko -->
+    <div class="actions-toolbar" id="shipping-method-buttons-container">
+        <div class="primary">
+            <button data-role="opc-continue" type="button" class="button action continue primary">
+                <span data-bind="i18n: 'Continue'"></span>
+            </button>
+        </div>
+    </div>
+    <!-- ko foreach: getRegion('shippingAdditional') -->
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <!-- /ko -->
+</div>

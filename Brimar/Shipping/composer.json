@@ -1,0 +1,19 @@
+{
+    "name": "brimar/module-shipping",
+    "description": "Brimar Shipping Method for Magento 2",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "require": {
+        "php": "~8.1",
+        "magento/framework": "^103.0|^104.0",
+        "magento/module-shipping": "^100.4|^101.0",
+        "magento/module-checkout": "^100.4|^101.0"
+    },
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "Brimar\\Shipping\\": ""
+        }
+    }
+}

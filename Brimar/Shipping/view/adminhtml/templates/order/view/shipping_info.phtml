@@ -1,0 +1,16 @@
+<?php
+/** @var \Brimar\Shipping\Block\Adminhtml\Order\View\ShippingInfo $block */
+$info = $block->getBrimarShippingInfo();
+?>
+<?php if (!empty($info)): ?>
+    <div class="admin__page-section-item-title">
+        <span class="title"><?= $block->escapeHtml(__('Brimar Shipping Options')) ?></span>
+    </div>
+    <div class="admin__page-section-item-content">
+        <ul>
+            <?php foreach ($info as $item): ?>
+                <li><?= $block->escapeHtml($item) ?></li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+<?php endif; ?>

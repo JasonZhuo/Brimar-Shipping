@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    
+    <type name="Magento\Quote\Model\Quote\Address\ToOrderAddress">
+        <plugin name="brimar_shipping_to_order_address" type="Brimar\Shipping\Plugin\QuoteAddressToOrderAddress" sortOrder="10"/>
+    </type>
+    
+    <type name="Magento\Sales\Model\Order">
+        <plugin name="brimar_shipping_order_extension_attributes" type="Brimar\Shipping\Plugin\OrderExtensionAttributes" sortOrder="10"/>
+    </type>
+
+    <type name="Magento\Checkout\Model\ShippingInformationManagement">
+        <plugin name="brimar_shipping_info_saver" type="Brimar\Shipping\Plugin\Checkout\ShippingInformationManagementPlugin"/>
+    </type>
+
+</config>
